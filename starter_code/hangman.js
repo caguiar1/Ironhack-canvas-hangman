@@ -1,39 +1,45 @@
 let hangman;
 
-// class Hangman {
-//   constructor() {
+class Hangman {
+  constructor() {
 
-//   }
+    this.words = ["Cheese", "Chef", "School", ""];
+    this.secretWord = this.getWord();
 
-//   getWord() {
+  }
 
-//   }
+  getWord() {
 
-//   checkIfLetter(keyCode) {
+    return this.words[Math.floor(Math.random() * this.words.length)];
 
-//   }
+  }
 
-//   checkClickedLetters(key) {
+  checkIfLetter(keyCode) {
 
-//   }
+   
+  }
 
-//   addCorrectLetter(i) {
+  checkClickedLetters(key) {
 
-//   }
+  }
 
-//   addWrongLetter(letter) {
+  addCorrectLetter(i) {
 
-//   }
+  }
 
-//   checkGameOver() {
+  addWrongLetter(letter) {
 
-//   }
+  }
 
-//   checkWinner() {
+  checkGameOver() {
 
-//   }
+  }
 
-// }
+  checkWinner() {
+
+  }
+
+}
 
 document.getElementById('start-game-button').onclick = () => {
   hangman = new Hangman();

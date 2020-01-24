@@ -2,6 +2,7 @@
 class HangmanCanvas {
   constructor(secretWord) {
     this.ctx = document.getElementById('hangman').getContext('2d');
+
     
   }
 
